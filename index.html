@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- CDN -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <!-- Begin -->
+        <h1 id="title">Agitama Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill this form</p>
+        <!-- Form -->
+        <form id="survey-form">
+            <!-- Field -->
+            <label id="name-label">Name:</label>
+            <input type="text" name="yourName" id="name" required placeholder="Enter your name">
+            <br>
+            <label id="email-label">Email:</label>
+            <input type="email" name="yourEmail" id="email" required placeholder="Enter your Email">
+            <br>
+            <label id="number-label">Age:</label>
+            <input type="number" name="yourAge" id="number" min="1" max="100" placeholder="Age">
+            <br>
+            <!-- Dropdown -->
+            <select name="role" id="dropdown">
+              <option value="yourRole" disabled selected>Select your role</option>
+              <option value="student">Student</option>
+              <option value="lecturer">Lecturer</option>
+              <option value="employee">Employee</option>
+              <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" class="radio-input" value="male">Male<br>
+            <input type="radio" id="female" name="gender" class="radio-input" value="female">Female<br>
+            <input type="radio" id="other" name="gender" class="radio-input" value="other">Other<br>
+            <br>
+            <p>What do you have?</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" class="checkbox-input" value="Bike">I have a bike<br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" class="checkbox-input" value="Car">I have a car<br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" class="checkbox-input" value="Boat">I have a boat<br>
+            <br>
+            <p>Leave a message about Agitama</p>
+            <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your message here"
+            ></textarea>
+            <br>
+            <br>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>

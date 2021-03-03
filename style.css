@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    padding-left: 33%;
+    padding-right: 20%;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+input {
+    display: block;
+}
+
+form {
+    background-color: blueviolet;
+}
+
+.radio-input, .checkbox-input {
+    display: inline-block;
+}
